@@ -1,6 +1,0 @@
-Create a file named .env.local next to package.json (on Railway, set these as service variables):
-
-NEXT_PUBLIC_SUPABASE_URL=<your Supabase project URL>
-NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=<your Supabase publishable (anon) key>
-
-Then: npm install, npm run build, npm start

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERTQA Ai Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #080a0f;
+            --bg-gradient-blue: #0d1526;
+            --bg-gradient-purple: #1a0b1c;
+            --card-bg: #15181f;
+            --card-border: #2b303b;
+            --accent-gold: #d7a74a;
+            --accent-gold-hover: #eab955;
+            --text-primary: #ffffff;
+            --text-secondary: #9ca3af;
+            --input-bg: #1d222d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            background-image: 
+                radial-gradient(circle at 10% 10%, var(--bg-gradient-blue) 0%, transparent 40%),
+                radial-gradient(circle at 90% 10%, var(--bg-gradient-purple) 0%, transparent 40%);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-primary);
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            width: 100%;
+            max-width: 400px;
+            padding: 48px 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .logo-svg {
+            width: 48px;
+            height: 48px;
+            color: var(--accent-gold);
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 32px;
+            letter-spacing: 0.5px;
+        }
+
+        .version-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 14px;
+            background-color: var(--input-bg);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 500;
+            border: 1px solid var(--card-border);
+            transition: all 0.2s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-gold);
+            color: #000000;
+            border-color: var(--accent-gold);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(215, 167, 74, 0.2);
+        }
+
+        /* Primary styling for the latest version (V3) */
+        .btn.primary {
+            background-color: var(--accent-gold);
+            color: #000000;
+            font-weight: 600;
+            border-color: var(--accent-gold);
+        }
+
+        .btn.primary:hover {
+            background-color: var(--accent-gold-hover);
+            box-shadow: 0 4px 15px rgba(215, 167, 74, 0.4);
+        }
+
+        .footer-text {
+            margin-top: 32px;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="logo-container">
+            <svg class="logo-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C6.5 2 2 6.5 2 12c0 5.5 4.5 10 10 10s10-4.5 10-10C22 6.5 17.5 2 12 2z"/>
+                <path d="M12 22V2"/>
+                <path d="M12 7a5 5 0 0 0-5 5 5 5 0 0 0 5 5 5 5 0 0 0 5-5 5 5 0 0 0-5-5z"/>
+            </svg>
+        </div>
+        
+        <h1>ERTQA Ai Library</h1>
+        
+        <div class="version-list">
+            <a href="#" class="btn">V1</a>
+            <a href="#" class="btn">V2</a>
+            <a href="#" class="btn primary">V3</a>
+        </div>
+
+        <p class="footer-text">Select a version to proceed</p>
+    </div>
+
+</body>
+</html>
